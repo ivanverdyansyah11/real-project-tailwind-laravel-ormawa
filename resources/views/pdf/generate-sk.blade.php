@@ -61,8 +61,8 @@
             <div style="position: relative;">
                 <p style="position: relative; font-size: 0.913rem; line-height: 100%; margin: 0 !important; padding: 0; width: fit-content !important;">Ketua Steering Committee,</p>
                 <p style="position: relative; font-size: 0.913rem; line-height: 100%; margin: 0 !important; padding: 0; width: fit-content !important;">Kepala Program Studi Sistem Informasi</p>
-                <p style="position: relative; font-size: 0.913rem; line-height: 100%; margin: 0 !important; margin-top: 80px !important; padding: 0; width: fit-content !important;">{{$event->steering_committee_chair}}</p>
-                <img src="{{public_path('assets/image/sample-ttd.png')}}" alt="Sample TTD" style="width: 240px !important; position: absolute; bottom: 88%; left: -10%;">
+                <p style="position: relative; font-size: 0.913rem; line-height: 100%; margin: 0 !important; margin-top: 120px !important; padding: 0; width: fit-content !important;">{{$event->steering_committee_chair}}</p>
+{{--                <img src="{{public_path('assets/image/sample-ttd.png')}}" alt="Sample TTD" style="width: 240px !important; position: absolute; bottom: 88%; left: -10%;">--}}
             </div>
         </td>
     </tr>
