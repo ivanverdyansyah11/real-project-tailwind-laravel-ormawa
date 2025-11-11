@@ -12,10 +12,8 @@ class AdministrativeDocumentController extends Controller
     {
         $search = $request->input('search');
         $administrativeDocuments = AdministrativeDocument::when($search, function ($query, $search) {
-                $query->where('name', 'LIKE', '%' . $search . '%')
-                    ->orWhere('description', 'LIKE', '%' . $search . '%');
-            })->when(auth()->user()->student_organization, function ($query) {
-                $query->where('users_id', auth()->user()->id);
+            $query->where('name', 'LIKE', '%' . $search . '%')
+                ->orWhere('description', 'LIKE', '%' . $search . '%');
         })->latest()->paginate(10);
 
         return view('dashboard.administrative-document.index', [
