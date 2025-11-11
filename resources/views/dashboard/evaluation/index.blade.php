@@ -68,11 +68,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($evaluations) > 10)
-            <div class="table-paginate">
-                {{ $evaluations->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $evaluations->links() }}
+        </div>
     </div>
     @include('modal.evaluation')
 

@@ -53,11 +53,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($studentActivityUnitPrograms) > 10)
-            <div class="table-paginate">
-                {{ $studentActivityUnitPrograms->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $studentActivityUnitPrograms->links() }}
+        </div>
     </div>
     @include('modal.student-activity-unit-program')
 

@@ -60,11 +60,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($administrativeDocuments) > 10)
-            <div class="table-paginate">
-                {{ $administrativeDocuments->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $administrativeDocuments->links() }}
+        </div>
     </div>
     @include('modal.administrative-document')
 

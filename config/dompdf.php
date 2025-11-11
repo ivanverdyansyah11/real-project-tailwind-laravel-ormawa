@@ -47,6 +47,13 @@ return [
          */
         'font_dir' => storage_path('fonts'), // advised by dompdf (https://github.com/dompdf/dompdf/pull/782)
 
+        'fonts' => [
+            'xd-prime-regular' => [
+                'normal' => public_path('assets/font/xd-prime/XDPrime-Regular.ttf'),
+                'bold' => public_path('assets/font/xd-prime/XDPrime-Medium.ttf'),
+            ],
+        ],
+
         /**
          * The location of the DOMPDF font cache directory
          *
