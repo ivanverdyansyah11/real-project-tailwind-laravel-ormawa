@@ -18,7 +18,7 @@
             <p class="description">{{ $studentOrganization->description }}</p>
         </div>
     </section>
-    @if($studentOrganization->student_organization_structures->count() > 0 && $studentOrganization->student_organization_achievements->count() > 0)
+    @if($studentOrganization->student_organization_structures->count() > 0 || $studentOrganization->student_organization_achievements->count() > 0)
         <div class="gap-[100px] md:gap-[110px] lg:gap-[120px] flex flex-col py-[100px] md:py-[110px] lg:py-[120px] bg-dark-900">
             @if($studentOrganization->student_organization_structures->count() > 0)
                 <section class="structure-ormawa container">
@@ -55,7 +55,7 @@
             @endif
         </div>
     @endif
-    @if($studentOrganization->student_organization_visions->count() > 0 && $studentOrganization->student_organization_missions->count() > 0)
+    @if($studentOrganization->student_organization_visions->count() > 0 || $studentOrganization->student_organization_missions->count() > 0)
         <section class="ormawa container" id="ormawa ukm">
             <div class="section-header">
                 <h2 class="title">Visi & Misi Organisasi Mahasiswa</h2>
