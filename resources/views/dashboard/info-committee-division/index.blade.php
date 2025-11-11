@@ -53,11 +53,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($infoCommitteeDivisions) > 10)
-            <div class="table-paginate">
-                {{ $infoCommitteeDivisions->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $infoCommitteeDivisions->links() }}
+        </div>
     </div>
     @include('modal.info-committee-division')
 

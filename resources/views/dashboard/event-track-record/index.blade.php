@@ -55,11 +55,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($eventTrackRecords) > 10)
-            <div class="table-paginate">
-                {{ $eventTrackRecords->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $eventTrackRecords->links() }}
+        </div>
     </div>
     @include('modal.event-track-record')
 

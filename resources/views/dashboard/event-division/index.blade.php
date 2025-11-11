@@ -53,11 +53,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($eventDivisions) > 10)
-            <div class="table-paginate">
-                {{ $eventDivisions->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $eventDivisions->links() }}
+        </div>
     </div>
     @include('modal.event-division')
 

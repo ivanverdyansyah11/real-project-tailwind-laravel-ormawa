@@ -55,11 +55,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($newses) > 10)
-            <div class="table-paginate">
-                {{ $newses->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $newses->links() }}
+        </div>
     </div>
     @include('modal.news')
 

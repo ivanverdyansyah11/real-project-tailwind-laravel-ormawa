@@ -53,11 +53,9 @@
                 </tbody>
             </table>
         </div>
-        @if(count($studentOrganizationDivisions) > 10)
-            <div class="table-paginate">
-                {{ $studentOrganizationDivisions->links() }}
-            </div>
-        @endif
+        <div class="table-paginate">
+            {{ $studentOrganizationDivisions->links() }}
+        </div>
     </div>
     @include('modal.student-organization-division')
 
