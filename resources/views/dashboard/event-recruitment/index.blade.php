@@ -16,7 +16,7 @@
                 <input type="search" class="input" name="search" placeholder="Cari divisi..." value="{{ $search }}">
             </form>
             <a href="{{ route('event-recruitment.generate-sk', $event) }}" class="button-secondary">Cetak SK Panitia</a>
-            <a href="{{ route('event-recruitment.generate-sk', $event) }}" class="button-primary" onclick="openModal(this)">Tambah Perekrut</a>
+            <a href="{{ route('event-recruitment.create', $event) }}" class="button-primary" onclick="openModal(this)">Tambah Perekrut</a>
         </div>
         <div class="table-group">
             <table>
