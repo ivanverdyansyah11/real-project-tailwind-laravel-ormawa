@@ -15,7 +15,9 @@
             <form method="GET" class="form">
                 <input type="search" class="input" name="search" placeholder="Cari visi..." value="{{ $search }}">
             </form>
-            <button class="button-primary" data-target="createModal" onclick="openModal(this)">Tambah Visi</button>
+            @if(auth()->user()->admin || auth()->user()->student_activity_unit)
+                <button class="button-primary" data-target="createModal" onclick="openModal(this)">Tambah Visi</button>
+            @endif
         </div>
         <div class="table-group">
             <table>
@@ -37,12 +39,14 @@
                                     <button class="button icon-detail" data-target="detailModal" data-id="{{ $studentActivityUnitVision->id }}" onclick="openModal(this)">
                                         <span class="bg-detail-primary"></span>
                                     </button>
-                                    <button class="button icon-edit" data-target="editModal" data-id="{{ $studentActivityUnitVision->id }}" onclick="openModal(this)">
-                                        <span class="bg-edit-warning"></span>
-                                    </button>
-                                    <button class="button icon-delete" data-target="deleteModal" data-id="{{ $studentActivityUnitVision->id }}" onclick="openModal(this)">
-                                        <span class="bg-delete-danger"></span>
-                                    </button>
+                                    @if(auth()->user()->admin || auth()->user()->student_activity_unit)
+                                        <button class="button icon-edit" data-target="editModal" data-id="{{ $studentActivityUnitVision->id }}" onclick="openModal(this)">
+                                            <span class="bg-edit-warning"></span>
+                                        </button>
+                                        <button class="button icon-delete" data-target="deleteModal" data-id="{{ $studentActivityUnitVision->id }}" onclick="openModal(this)">
+                                            <span class="bg-delete-danger"></span>
+                                        </button>
+                                    @endif
                                 </div>
                             </td>
                         </tr>
